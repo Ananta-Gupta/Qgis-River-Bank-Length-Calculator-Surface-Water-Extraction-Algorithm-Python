@@ -21,12 +21,12 @@
 	5. Run 'DistenceCalculator.py’ python script for calculating the distance.
 	   (read the comments properly. Change the path as mentioned in the comments.)
 	6. Algorithm finish.
-# Method I – (by taking Bridge as a refence line)
+# Method I – (taking Bridge as a refence line)
 	1. Generate start and end coordinates of the bridge and store then in a csv file.
   	2. Run 'ReferenceLineGenerator.py’ python script to generate a reference line perpendicular to the bridge.
   	3. Use QChanage plugin for generating equidistance points on the reference line.
   	4. Run 'DistenceCalculator.py’ python script to calculate the river bank length.
-# Method II – (without Bridge reference)
+# Method II – (drawing own reference line)
   	1. Draw a reference line on the canvas parallel to the river water flow.
   	2. Use QChanage plugin for generating equidistant points on the reference line.
   	3. Run 'DistenceCalculator.py’ python script to calculate the river bank length. 
