@@ -47,8 +47,8 @@
   		(all formulas are given below)
 # Formulas:
 	Reflectance: -
-    	((0.0000200 * Landsat8_Band_no) + (-0.100)) / Cos(21.732483) * (3.141592 / 180)
+    		((0.0000200 * Landsat8_Band_no) + (-0.100)) / Cos(21.732483) * (3.141592 / 180)
   	NDWI: -
-    	(Red - NIR) / (Red + NIR)
+    		(Red - NIR) / (Red + NIR)
   	Surface Water: -
-    	NDWI > 0
+    		NDWI > 0
