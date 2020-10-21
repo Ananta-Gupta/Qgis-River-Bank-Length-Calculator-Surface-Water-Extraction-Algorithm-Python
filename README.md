@@ -1,6 +1,11 @@
-# Qgis-DistanceCalcutalor-Plugin
+# Qgis- River Bank Length Calcutalor & Surface Water Extraction Algorithm (Python)
+
+# Index:
+	# Working
+
 # Working:
-	This algorithm is use for calculating the distance between the river banks, distance till the flood line. 2nd algorithm is use for extracting surface water from the landsat-8 images.
+	1st algorithm is use for calculating the distance between the river banks, distance till the flood line.
+	2nd algorithm is use for extracting surface water from the landsat-8 images.
 
 (1st Algorithm)
 # Steps to use the algorithm perfectly:
