@@ -10,7 +10,7 @@
 	2nd algorithm is use for extracting surface water from the landsat-8 images.
 
 (1st Algorithm)
-# Steps to calculating River Bank Length algorithm perfectly:
+# Steps to calculating River Bank Length perfectly:
 	1. Create and empty output folder in your working directory.
 	2. Choose any one method to proceed with the algorithm.
 	   (If choose method I, run 'ReferenceLineGenerator.py’ python script.)
