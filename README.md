@@ -1,7 +1,9 @@
 # Qgis- River Bank Length Calcutalor & Surface Water Extraction Algorithm (Python)
 
 # Index:
-	# Working
+	a) Working
+	b) Steps for calculating River Bank Lengths
+	c) Steps for extracting Surface Water
 
 # Working:
 	1st algorithm is use for calculating the distance between the river banks, distance till the flood line.
@@ -19,13 +21,11 @@
 	5. Run 'DistenceCalculator.py’ python script for calculating the distance.
 	   (read the comments properly. Change the path as mentioned in the comments.)
 	6. Algorithm finish.
-
 # Method I – (by taking Bridge as a refence line)
 	1. Generate start and end coordinates of the bridge and store then in a csv file.
   	2. Run 'ReferenceLineGenerator.py’ python script to generate a reference line perpendicular to the bridge.
   	3. Use QChanage plugin for generating equidistance points on the reference line.
   	4. Run 'DistenceCalculator.py’ python script to calculate the river bank length.
-
 # Method II – (without Bridge reference)
   	1. Draw a reference line on the canvas parallel to the river water flow.
   	2. Use QChanage plugin for generating equidistant points on the reference line.
@@ -38,15 +38,13 @@
   	2. Set the paths.
   	3. Run 'SurfaceWaterExtraction.py' python script to generate surface water.
   	4. (optional) Change the colours of the NDWI layer.
-
-# Method I – (using Raster Calculator)
+# Method II – (using Raster Calculator)
   	1. Open Raster Calculator.
   	2. Calculate Reflectance of the require band layer.
   	3. Calculate NDWI from the Reflectance layer.
   	4. Calculate surface water from NDWI layer.
   	5. (optional) Change the colours of the NDWI layer.
   		(all formulas are given below)
-
 # Formulas:
 	Reflectance: -
     	((0.0000200 * Landsat8_Band_no) + (-0.100)) / Cos(21.732483) * (3.141592 / 180)
