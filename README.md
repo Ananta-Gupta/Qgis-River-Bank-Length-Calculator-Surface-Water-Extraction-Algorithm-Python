@@ -50,6 +50,6 @@
     	((0.0000200 * Landsat8_Band_no) + (-0.100)) / Cos(21.732483) * (3.141592 / 180)
 		(only for Landsat-8 Data)
   	NDWI: -
-    	(Red - NIR) / (Red + NIR)
+    	(Green - NIR) / (Green + NIR)
   	Surface Water: -
     	NDWI > 0
