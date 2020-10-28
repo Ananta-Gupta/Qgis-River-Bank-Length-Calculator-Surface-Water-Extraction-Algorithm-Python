@@ -51,6 +51,6 @@
 		(only for Landsat-8 Data)
   	NDWI: -
     	(Green - NIR) / (Green + NIR)
-	(for surface water)
+		(for surface water)
   	Surface Water: -
     	NDWI > 0
