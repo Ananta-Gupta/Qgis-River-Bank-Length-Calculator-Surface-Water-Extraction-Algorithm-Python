@@ -1,4 +1,4 @@
-# Qgis- River Bank Length Calcutalor & Surface Water Extraction Algorithm (Python)
+# Qgis- River Bank Length Calculator & Surface Water Extraction Algorithm (Python)
 
 ## Index:
 	a) Working
@@ -25,8 +25,8 @@
 		7. pyproj
 		8. geopandas
 
-	*Note: These python libraries have to be installed in order as mentained above. All libraries are interdependent to each other.
-	**if an error occure while installing from python comand line, download them manually from "https://www.lfd.uci.edu/~gohlke/pythonlibs/".
+	*Note: These python libraries have to be installed in order as mentioned above. All libraries are interdependent to each other.
+	**if an error occurs while installing from python command line, download them manually from "https://www.lfd.uci.edu/~gohlke/pythonlibs/".
 	Only download the version compatible to your python version and python version bit (i.e. 32 or 64).
 	
 	To check python version details use
@@ -35,7 +35,6 @@
 
 	To Download Python Package
 <img width="551" alt="Package Version" src="https://user-images.githubusercontent.com/58319462/99643981-5d4f0f00-2a73-11eb-934c-68ef6110712b.PNG">
-
 
 (1st Algorithm)
 ## Steps to calculating River Bank Length perfectly:
