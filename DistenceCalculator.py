@@ -181,6 +181,7 @@ for feat in floodLayer[0].getFeatures():
     x = float(feat['xcoord'])
     y = float(feat['ycoord'])
     floodBorder.append([indx,x,y])
+#print("#############################################")
 
 disData = []
 lineNo = 1
@@ -197,17 +198,14 @@ for data in range(len(rRightBorder)):
     #distance.setEllipsoidalMode(True)
     distance.setEllipsoid('WGS84')
     l1 = distance.measureLine(p2,p1)
-    l2 = distance.measureLine(p3,p2)
-    l3 = distance.measureLine(p4,p2)
-    l4 = float(distance.measureLine(p4,p3))
-    l5 = l1+l2+l4
-    disData.append([lineNo, l1, l2, l3, l4, l5])
+    l2 = distance.measureLine(p3,p1)
+    l3 = distance.measureLine(p4,p1)
+
+    disData.append([lineNo, l1, l2, l3])
     lineNo += 1
     print("Line",rRightBorder[data][0], "Distance --> {:.2f}".format(l1), "m, ",\
     "{:.2f}".format(l2), "m, ",\
-    "{:.2f}".format(l3), "m, ",\
-    "{:.2f}".format(l4), "m, ",\
-    "{:.2f}".format(l5), "m")
+    "{:.2f}".format(l3), "m")
 
 print("Distance Calculated.")
 
@@ -218,10 +216,8 @@ print("Generating output csv...")
 
 file = open(outputCsvPath, "w+", newline='')
 header = ['Line Number',\
+'Reference Line to Right Border(in meter)',\
 'Reference Line to Left Border(in meter)',\
-'Left Border to Right Border(in meter)',\
-'Left Border to Flood Line(in meter)',\
-'Right Border to Flood Line(in meter)',\
 'Reference Line to Flood Line(in meter)']
 
 with file:
