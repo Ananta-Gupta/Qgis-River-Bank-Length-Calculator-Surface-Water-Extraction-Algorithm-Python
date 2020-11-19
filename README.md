@@ -11,7 +11,7 @@
 	2nd algorithm is use for extracting surface water from the landsat-8 images.
 
 ## Pre-Required
-	Softwares:
+	Software:
 		QGIS 3.xx or above.
 		Python 2.x or above.
 	
@@ -26,9 +26,15 @@
 		8. geopandas
 
 	*Note: These python libraries have to be installed in order as mentained above. All libraries are interdependent to each other.
-	**if an error occure while installing from python comand line, download them manually from "https://www.lfd.uci.edu/~gohlke/pythonlibs/". Only download the version compatable to your python version and python version bit (i.e. 32 or 64).
+	**if an error occure while installing from python comand line, download them manually from "https://www.lfd.uci.edu/~gohlke/pythonlibs/".
+	Only download the version compatible to your python version and python version bit (i.e. 32 or 64).
+	
 	To check python version details use
 		$> python
+<img width="647" alt="Python Version" src="https://user-images.githubusercontent.com/58319462/99643966-5a541e80-2a73-11eb-8d37-abf02b960901.PNG">
+
+	To Download Python Package
+<img width="551" alt="Package Version" src="https://user-images.githubusercontent.com/58319462/99643981-5d4f0f00-2a73-11eb-934c-68ef6110712b.PNG">
 
 
 (1st Algorithm)
@@ -67,7 +73,7 @@
   	4. Calculate surface water from NDWI layer.
   	5. (optional) Change the colours of the NDWI layer.
   		(all formulas are given below)
-		  
+
 ## Formulas:
 	Reflectance: -
 		((0.0000200 * Landsat8_Band_no) + (-0.100)) / Cos(21.732483) * (3.141592 / 180)
